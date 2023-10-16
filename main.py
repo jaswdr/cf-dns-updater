@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import time
 
@@ -10,9 +11,10 @@ ZONE = os.environ.get('CLOUDFLARE_ZONE_NAME')
 DNS_NAME = os.environ.get('CLOUDFLARE_DNS_NAME')
 DNS_TYPE = os.environ.get('CLOUDFLARE_DNS_TYPE', 'A')
 IP_SOURCE_URL = os.environ.get('IP_SOURCE_URL', 'https://api.ipify.org')
-POLL_INTERVAL = int(os.environ.get('POLL_INTERVAL', 60 * 30))
+POLL_INTERVAL = int(os.environ.get('POLL_INTERVAL', 60 * 5))
 
 def main():
+    print('Starting CloudFlare DNS Updater')
     while True:
         # Create a connection to the CloudFlare API
         cf = CloudFlare.CloudFlare(token=TOKEN)
