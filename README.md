@@ -1,6 +1,6 @@
 # CloudFlare DNS Updater
 
-> Monitors and update the IP associated with a DNS record in CloudFlare
+> Monitors and update DNS records in CloudFlare.
 
 ## Usage
 
