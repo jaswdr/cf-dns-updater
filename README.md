@@ -17,7 +17,7 @@ Run the script:
 
 ```sh
 $ ./main.py
-# Starting CloudFlare IP Updater...
+# Starting CloudFlare DNS Updater...
 ```
 
 The script will run in the foreground and log to stdout. It will check the DNS record every `POLL_INTERVAL` and update the record if it doesn't match.
